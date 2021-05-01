@@ -5,7 +5,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script async="" src="./Chicago Touch_files/js(1)"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-XBFRPTB1XZ');</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-XBFRPTB1XZ');
+    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chicago Touch</title>
@@ -16,58 +24,141 @@
     <meta name="url" content="https://michaelflatley.github.io">
     <link rel="icon" href="https://www.chicagotouch.com/img/favicon.ico?p=r" sizes="32x32">
     <link rel="icon" href="https://www.chicagotouch.com/img/favicon.ico?p=r" sizes="192x192">
-    <link rel="apple-touch-icon" href="https://www.chicagotouch.com/img/favicon.ico?p=r">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <meta name="msapplication-TileImage" content="/img/favicon.ico?p=r">
     <link rel="stylesheet" href="./Chicago Touch_files/style.css">
     <link rel="canonical" href="https://michaelflatley.github.io/">
     <link rel="shortlink" href="https://michaelflatley.github.io/">
     <meta name="generator" content="Jekyll">
     <meta name="generator" content="Bootstrap">
+
+    <style type="text/css">
+        .tlf-size{
+            font-size: 1.5em;
+        }
+
+        .iconSM{
+            margin-right: 5px;
+        }
+
+        @media (max-width: 500px) {
+            .iconSM{
+                width: 18px;
+                height: 18px;
+                margin-right: 5px;
+            }
+            .tlf-size{
+                font-size: 1em;
+            }
+        }
+
+        #scroll {
+            position:fixed;
+            right:10px;
+            bottom:50px;
+            cursor:pointer;
+            width:50px;
+            height:50px;
+            background-color:#561b4c;
+            text-indent:-9999px;
+            display:none;
+            -webkit-border-radius:60px;
+            -moz-border-radius:60px;
+            border-radius:60px
+        }
+        #scroll span {
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-8px;
+            margin-top:-12px;
+            height:0;
+            width:0;
+            border:8px solid transparent;
+            border-bottom-color:#ffffff;
+        }
+        #scroll:hover {
+            background-color: #5d406d;
+            opacity:1;filter:"alpha(opacity=100)";
+            -ms-filter:"alpha(opacity=100)";
+        }
+
+    </style>
+
+    <script>
+
+        $(window).scroll(function(){ 
+    if ($(this).scrollTop() > 100) { 
+        $('#scroll').fadeIn(); 
+    } else { 
+        $('#scroll').fadeOut(); 
+    } 
+    });
+
+    $('#scroll').click(function(){ 
+    $("html, body").animate({ scrollTop: 0 }, 100); 
+    return false; });
+    </script>
+
+<script type='text/javascript'>
+    $(document).ready(function(){ 
+        $(window).scroll(function(){ 
+            if ($(this).scrollTop() > 100) { 
+                $('#scroll').fadeIn(); 
+            } else { 
+                $('#scroll').fadeOut(); 
+            } 
+        }); 
+        $('#scroll').click(function(){ 
+            $("html, body").animate({ scrollTop: 0 }, 100); 
+            return false; 
+        }); 
+    });
+    </script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
     <header class="container-fluid" id="header">
         <div class="row justify-content-between p-1 bg-light text-dark">
             <div class="col-6 small">
-                <span itemprop="telephone"> <a class="text-dark text-decoration-none" href="tel:312-929-3083">
+                <span itemprop="telephone"> <a class="text-dark text-decoration-none tlf-size"  href="tel:312-929-3083">
                         <img src="./Chicago Touch_files/telephone-fill.svg" alt="telephone"> 312-929-3083 </a> </span>
             </div>
-            <div class="col-6 text-end"> <a href="https://www.facebook.com/ChicagoTouch"
-                    class="link-dark text-decoration-none" target="_blank"> <img
-                        src="./Chicago Touch_files/facebook.svg" alt="facebook"> </a> <a
-                    href="https://twitter.com/chicagotouch" class="link-dark text-decoration-none" target="_blank"> <img
-                        src="./Chicago Touch_files/twitter.svg" alt="twitter"> </a> <a
-                    href="https://www.instagram.com/chicagotouchwellness" class="link-dark text-decoration-none"
-                    target="_blank"> <img src="./Chicago Touch_files/instagram.svg" alt="instagram"> </a> <a
-                    href="https://www.youtube.com/channel/UCW5TMSBZZ0VZ41EY-u5MYUg"
-                    class="link-dark text-decoration-none" target="_blank"> <img src="./Chicago Touch_files/youtube.svg"
-                        alt="youtube"> </a> <a href="https://www.linkedin.com/company/chicago-touch/"
-                    class="link-dark text-decoration-none" target="_blank"> <img
-                        src="./Chicago Touch_files/linkedin.svg" alt="linkedin"> </a> </div>
+            <div class="col-6 text-end"> 
+                <a href="https://www.facebook.com/ChicagoTouch" class="link-dark text-decoration-none" target="_blank"> 
+                <img class="iconSM" src="./Chicago Touch_files/facebook.svg" alt="facebook"> </a> 
+                <a href="https://twitter.com/chicagotouch" class="link-dark text-decoration-none" target="_blank"> 
+                <img class="iconSM" src="./Chicago Touch_files/twitter.svg" alt="twitter"> </a> 
+                <a href="https://www.instagram.com/chicagotouchwellness" class="link-dark text-decoration-none" target="_blank"> 
+                <img class="iconSM" src="./Chicago Touch_files/instagram.svg" alt="instagram"> </a> 
+                <a href="https://www.youtube.com/channel/UCW5TMSBZZ0VZ41EY-u5MYUg" class="link-dark text-decoration-none" target="_blank"> 
+                <img class="iconSM" src="./Chicago Touch_files/youtube.svg" alt="youtube"> </a> 
+                <a href="https://www.linkedin.com/company/chicago-touch/" class="link-dark text-decoration-none" target="_blank"> 
+                <img class="iconSM" src="./Chicago Touch_files/linkedin.svg" alt="linkedin"> </a> 
+            </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark navbar__bg" id="navbar">
-        <div class="container-fluid"> <a class="navbar-brand" href="https://www.chicagotouch.com/#"> <img
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark navbar__bg" id="navbar">
+        <div class="container-fluid"> <a class="navbar-brand" href="#"> <img
                     src="./Chicago Touch_files/logo.png" alt="" class="d-inline-block" style="height:2em"> Chicago Touch
             </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
                 aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"> <span
                     class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"> <a class="nav-link" aria-current="page"
-                            href="https://www.chicagotouch.com/#hero">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link"
-                            href="https://www.chicagotouch.com/#appointments">Appointments</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="https://www.chicagotouch.com/#about">About</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="https://www.chicagotouch.com/#services">Services</a>
+                            href="#appointments">Appointments</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="https://www.chicagotouch.com/#location">Location</a>
+                    <li class="nav-item"> <a class="nav-link" href="#location">Location</a>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="https://www.chicagotouch.com/#news">News</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#news">News</a> </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
     <section class="container-fluid m-0 p-0" id="hero">
         <div id="hero__carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-indicators"> <button type="button" data-bs-target="#hero__carousel"
@@ -78,7 +169,7 @@
             <div class="carousel-inner">
                 <!-- photo 1 -->
                 <div class="carousel-item active">
-                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/hallway.jpg"
+                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/carrousel 3-opt.jpg"
                             class="" alt="Chicago Touch" style="width: 100%; height: 100%; object-fit: cover;"> </div>
                     <div class="carousel-caption d-none d-sm-block">
                         <h1 class="fs-5">Chicago Touch</h1>
@@ -87,7 +178,7 @@
                 </div>
                 <!-- photo 2 -->
                 <div class="carousel-item ">
-                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/massage.jpg"
+                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/carrousel 5-opt.jpg"
                             class="" alt="Massage room" style="width: 100%; height: 100%; object-fit: cover;"> </div>
                     <div class="carousel-caption d-none d-sm-block">
                         <h1 class="fs-5">Massage room</h1>
@@ -96,27 +187,7 @@
                 </div>
                 <!-- photo 3 -->
                 <div class="carousel-item ">
-                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/counter.jpg"
-                            class="" alt="Certified experts" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="carousel-caption d-none d-sm-block">
-                        <h1 class="fs-5">Certified experts</h1>
-                        <h2 class="fs-6 fw-normal">Ask about insurance coverage</h2>
-                    </div>
-                </div>
-                <!-- photo 5 -->
-                <div class="carousel-item ">
-                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/counter.jpg"
-                            class="" alt="Certified experts" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="carousel-caption d-none d-sm-block">
-                        <h1 class="fs-5">Certified experts</h1>
-                        <h2 class="fs-6 fw-normal">Ask about insurance coverage</h2>
-                    </div>
-                </div>
-                <!-- photo 6 -->
-                <div class="carousel-item ">
-                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/counter.jpg"
+                    <div class="d-block w-100 carousel-img-container"> <img src="./Chicago Touch_files/carrousel 2-opt.jpg"
                             class="" alt="Certified experts" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="carousel-caption d-none d-sm-block">
@@ -214,7 +285,7 @@
                         medical procedures, including scarring. We’ve been in the West Loop for over 10 years. With our
                         partner, Urban Care Chiropractic, located in our center, it’s easy for you to receive whole body
                         care at one location.</p> <a class="btn btn-dark"
-                        href="https://www.chicagotouch.com/#about">Learn more ↓</a>
+                        href="#about">Learn more ↓</a>
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="card bg-light border-0" id="appointments" style="min-height: 30vh">
@@ -475,12 +546,13 @@
                             <div id="flush-collapse1" class="accordion-collapse collapse show"
                                 aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-light">
-                                    <div class="row">  
-                                        <img class="col-5"
-                                        src="./Chicago Touch_files/people_felicia_opt.jpg" alt="Icon of Swedish massage"
-                                        style="max-width: 100%; height: 100%; object-fit: cover;">
-                                    <p class="text-muted col-7" style="font-size:0.9em">Swedish, Clinical, Deep Tissue,
-                                        Lymphatic Drainage, Sports, Hydrotherapy, Prenatal</p>
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <img class="col-5" src="./Chicago Touch_files/people_felicia_opt.jpg"
+                                            alt="Icon of Swedish massage"
+                                            style="max-width: 148px; height: 184px; object-fit: cover;">
+                                        <p class="text-muted col-7" style="font-size:0.9em">
+                                            Swedish, Clinical, Deep Tissue, Lymph Drainage Massage, Hydrotherapy, Prenatal Massage
+                                        </p>
                                     </div>
                                     <p class="fw-bold">This is the only body you'll ever have. Make the most of it.</p>
                                     <p>Felicia’s treatments range from full-body relaxation to focusing on specific
@@ -498,8 +570,14 @@
                             <div id="flush-collapse2" class="accordion-collapse collapse "
                                 aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-light">
-                                    <p class="text-muted" style="font-size:0.9em">Clinical, Relaxation, Trigger Point,
-                                        Sports, Wellness</p>
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <img class="col-5" src="./Chicago Touch_files/people_alisia_opt.jpg"
+                                            alt="Icon of Swedish massage"
+                                            style="max-width: 148px; height: 184px; object-fit: cover;">
+                                        <p class="text-muted col-7" style="font-size:0.9em">
+                                            Clinical, Relaxation, Trigger Point, Sports Massage, Manual Lymphatic Drainage Massage
+                                        </p>
+                                    </div>
                                     <p class="fw-bold">There's no reason to get comfortable with pain and stiffness.</p>
                                     <p>Massage is a craft and an art for Alicia. Her work is very detailed and
                                         results-oriented. She will help you to become more aware of your body and your
@@ -516,8 +594,14 @@
                             <div id="flush-collapse3" class="accordion-collapse collapse "
                                 aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-light">
-                                    <p class="text-muted" style="font-size:0.9em">Sports, Prenatal, Acupressure,
-                                        Clinical</p>
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <img class="col-5" src="./Chicago Touch_files/people_mike_opt.jpg"
+                                            alt="Icon of Swedish massage"
+                                            style="max-width: 148px; height: 184px; object-fit: cover;">
+                                        <p class="text-muted col-7" style="font-size:0.9em">
+                                            Sports massage, Prenatal massage, Acupressure, Clinical massage, Post Cosmetic Surgery
+                                        </p>
+                                    </div>
                                     <p class="fw-bold">Energetics and intuition are key to effective bodywork.</p>
                                     <p>Michael uses his expertise in the mechanics and anatomy of movement to create
                                         treatments that will help to aleviate your stress, muscle imbalance and pain.
@@ -535,11 +619,20 @@
                             <div id="flush-collapse4" class="accordion-collapse collapse "
                                 aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-light">
-                                    <p class="text-muted" style="font-size:0.9em">Deep Tissue, Trigger Point Release</p>
-                                    <p class="fw-bold">Every body can feel rejuvenated.</p>
-                                    <p>Marco specialices in Deep Tissure and Trigger Point Release because he believes
-                                        it achieves the most beneficial response for his clients. His treatment will
-                                        help relieve chronic pain in your specific areas and feel better in general.</p>
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <img class="col-5" src="./Chicago Touch_files/people_marco_opt.jpg"
+                                            alt="Icon of Swedish massage"
+                                            style="max-width: 148px; height: 184px; object-fit: cover;">
+                                        <p class="text-muted col-7" style="font-size:0.9em">D
+                                            eep Tissue Massage, Trigger Point Release, Swedish Massage, Sports Massage
+                                        </p>
+                                        </div>
+                                        <p class="fw-bold">Every body can feel rejuvenated.</p>
+                                        <p>Marco specializes in Deep Tissue and Trigger Point Release because he believes it
+                                            achieves the most beneficial response for his clients. His treatments will help relieve
+                                            chronic pain in your specific areas and feel better in general.
+                                        </p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -551,14 +644,23 @@
                             <div id="flush-collapse5" class="accordion-collapse collapse "
                                 aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-light">
-                                    <p class="text-muted" style="font-size:0.9em">Acupuncture, TCM, Shiatsu, Tuina
-                                        Chinese Massage, Thai, Craniosacral Therapy</p>
-                                    <p class="fw-bold">Balancing energy and blood flow results in a healthy body and
-                                        mind.</p>
-                                    <p>Working together as a team, Ning can help you improve energy and immunity, plus
-                                        clear and calm your mind and spirit. Her treatments will free and smooth your
-                                        flow of energy and blood to reduce the stagnation that causes tightness,
-                                        tension, pain and stress.</p>
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <img class="col-5" src="./Chicago Touch_files/people_ning_opt.jpg"
+                                            alt="Icon of Swedish massage"
+                                            style="max-width: 148px; height: 184px; object-fit: cover;">
+                                        <p class="text-muted col-7" style="font-size:0.9em">Acupuncture, TCM, Shiatsu,
+                                            Tuina
+                                            Chinese Massage, Thai, Craniosacral Therapy</p>
+                                        </div>
+                                        <p class="fw-bold">Balancing energy and blood flow results in a healthy body and
+                                            mind.</p>
+                                        <p>Working together as a team, Ning can help you improve energy and immunity,
+                                            plus
+                                            clear and calm your mind and spirit. Her treatments will free and smooth
+                                            your
+                                            flow of energy and blood to reduce the stagnation that causes tightness,
+                                            tension, pain and stress.</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -572,201 +674,61 @@
                     <h1 class="mb-3">Services</h1>
                 </div>
             </div>
-            <div class="row px-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6"> <a
-                    class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+            <div class="row"> 
+                <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
                     data-bs-toggle="modal" data-bs-target="#serviceModal-1">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img 
                             src="./Chicago Touch_files/massage.svg" alt="Icon of Swedish massage"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
+                            style="max-width: 80%; height: 80%;"> </div>
                     <h2 class="fs-3">Swedish massage</h2>
                 </a>
-                <div class="modal fade" id="serviceModal-1" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Swedish massage </h5> <button
-                                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>It is also called European massage. It features the principles of continuous touch
-                                    and transitional strokes, including:</p>
-                                <ul>
-                                    <li>Gliding strokes - Aka Effleurage</li>
-                                    <li>Compression and Kneading - Aka petrissage</li>
-                                    <li>Rocking/Shaking - Relaxes joint tissue, supports range of motion</li>
-                                    <li>Stretching - Best example: hip stretches to loosen the lower back</li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div> <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+                 <a class=" col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
                     data-bs-toggle="modal" data-bs-target="#serviceModal-2">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img 
                             src="./Chicago Touch_files/deep-tissue.svg" alt="Icon of Deep tissue"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
+                            style="max-width: 80%; height: 80%;"> </div>
                     <h2 class="fs-3">Deep tissue</h2>
                 </a>
-                <div class="modal fade" id="serviceModal-2" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Deep tissue </h5> <button type="button"
-                                    class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Deep tissue massage, or structural bodywork includes a variety of pressure levels
-                                    including sustained contact with minimal pressure.</p>
-                                <p>Deep tissue massage has more emphasis on the pliability of the fascia which is the
-                                    connective tissue that surrounds muscles and organs.</p>
-                                <p>If the touch modality is attempting to release fascia that has become too thick, then
-                                    it’s considered deep tissue bodywork. At Chicago Touch, Marco has completed a
-                                    150-hour program in Structural Integration.</p>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div> <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+                <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
                     data-bs-toggle="modal" data-bs-target="#serviceModal-3">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img 
                             src="./Chicago Touch_files/cramp.svg" alt="Icon of Sports massage"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
+                            style="max-width: 80%; height: 80%;"> </div>
                     <h2 class="fs-3">Sports massage</h2>
                 </a>
-                <div class="modal fade" id="serviceModal-3" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Sports massage </h5> <button
-                                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Sports massage has multiple facets:</p>
-                                <ul>
-                                    <li>Performance Enhancement - Less potential for a muscle to be injured when it has
-                                        been de-stressed.</li>
-                                    <li>Improved recovery time - Get any type of massage after your most intense
-                                        training sessions. Faster recovery guaranteed.</li>
-                                    <li>Rehabilitation - Sports medicine involves the use of touch modalities to speed
-                                        up recovery time from any type of injury.ic nervous system associated with
-                                        relaxation, recovery and healing.</li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div> <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
-                    data-bs-toggle="modal" data-bs-target="#serviceModal-4">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
-                            src="./Chicago Touch_files/prenatal.svg" alt="Icon of Prenatal massage"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
-                    <h2 class="fs-3">Prenatal massage</h2>
-                </a>
-                <div class="modal fade" id="serviceModal-4" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Prenatal massage </h5> <button
-                                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Pregnancy has symptoms and natural discomfort. All aspects of healthy lifestyle take
-                                    on additional significance during pregnancy. Minimizing stress becomes a higher
-                                    priority.</p>
-                                <p>We avoid prone massage after the first trimester and we only do side-lying massage
-                                    during the third trimester.</p>
-                                <p>Props, pillows and bolsters are used to achieve the most comfortable position. Our
-                                    top prenatal therapist is Ning who has a Master’s degree in Oriental Medicine.</p>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div> <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+
+                <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
                     data-bs-toggle="modal" data-bs-target="#serviceModal-5">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img 
                             src="./Chicago Touch_files/lymph.svg" alt="Icon of Manual lymphatic drainage"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
+                            style="max-width: 80%; height: 80%;"> </div>
                     <h2 class="fs-3">Manual lymphatic drainage</h2>
                 </a>
-                <div class="modal fade" id="serviceModal-5" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Manual lymphatic drainage </h5> <button
-                                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Lymphatic drainage can help speed up the shrinkage of scar tissue. It’s also used
-                                    with cleansing and detoxification. Lymph drainage is highly recommended after any
-                                    liposuction treatments as it will expedite recovery after the procedure.</p>
-                                <p>Reach us to learn more about our post liposuction services to expedite your recovery
-                                    and combine it with our compression garments.</p>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div> <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+                
+                <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
                     data-bs-toggle="modal" data-bs-target="#serviceModal-6">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img 
                             src="./Chicago Touch_files/acupuncture.svg" alt="Icon of Acupuncture"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
+                            style="max-width: 80%; height: 80%;"> </div>
                     <h2 class="fs-3">Acupuncture</h2>
                 </a>
-                <div class="modal fade" id="serviceModal-6" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Acupuncture </h5> <button type="button"
-                                    class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Acupuncture is a form of alternative medicine and a key component of traditional
-                                    Chinese medicine in which thin needles are inserted into the body.&nbsp;It could
-                                    help with low&nbsp;back pain, neck pain, headache and migraine.</p>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div> <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+
+                <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
                     data-bs-toggle="modal" data-bs-target="#serviceModal-7">
-                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img class="servicesTall"
                             src="./Chicago Touch_files/compression.svg" alt="Icon of Compression garments"
-                            style="max-width: 100%; height: 100%; object-fit: cover;"> </div>
+                            style="max-width: 80%; height: 80%;"> </div>
                     <h2 class="fs-3">Compression garments</h2>
                 </a>
-                <div class="modal fade" id="serviceModal-7" data-bs-backdrop="true" data-bs-keyboard="true"
-                    tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="serviceModalLabel"> Compression garments </h5> <button
-                                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Compression is a key component of the liposuction recovery process. Compression
-                                    garments offer many benefits in the recovery process from liposuction and&nbsp;body
-                                    contouring procedures and can make a dramatic difference in the surgical outcome.
-                                    Now, offering compression garment measurements for proper fitting. Also offering the
-                                    option to buy direct your compression garment (faja) at Chicago Touch.</p>
-                            </div>
-                            <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
-                                    target="_blank"> Appointment → </a> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                <a class="col text-center rounded-3 link-dark text-decoration-none p-2 mb-4 services__card"
+                    data-bs-toggle="modal" data-bs-target="#serviceModal-4">
+                    <div class="d-flex align-items-center justify-content-center my-3" style="height:10rem"> <img 
+                            src="./Chicago Touch_files/prenatal.svg" alt="Icon of Prenatal massage"
+                            style="max-width: 80%; height: 80%;"> </div>
+                    <h2 class="fs-3">Prenatal massage</h2>
+                </a>
+
         </section>
         <section class="container my-5" id="location">
             <div class="row px-3">
@@ -844,22 +806,194 @@
                     </a></div>
             </div>
         </section>
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
         <footer class="container-fluid" id="footer">
             <div class="row justify-content-between p-1 bg-light text-dark">
-                <div class="col-6 small"> <span itemprop="telephone"> <a class="text-dark text-decoration-none"
-                            href="tel:312-929-3083"> <i class="bi bi-telephone-fill"></i> 312-929-3083 </a> </span>
+                <div class="row">
+                    <div class="col-6 small"> <a class="text-dark text-decoration-none tlf-size" style="position:relative; bottom:-15px;"
+                        href="mailto:toocooltobemkt@gmail.com"> Copyright © <script>var f = new Date();
+                            document.write(f.getFullYear());
+                            </script> </script></a> 
+                    </div>
+                <div class="col-6">
+                <div class="col-12 text-end"> 
+                    <a href="https://www.facebook.com/ChicagoTouch" class="link-dark text-decoration-none" target="_blank"> 
+                    <img class="iconSM" src="./Chicago Touch_files/facebook.svg" alt="facebook"> </a> 
+                    <a href="https://twitter.com/chicagotouch" class="link-dark text-decoration-none" target="_blank"> 
+                    <img class="iconSM" src="./Chicago Touch_files/twitter.svg" alt="twitter"> </a> 
+                    <a href="https://www.instagram.com/chicagotouchwellness" class="link-dark text-decoration-none" target="_blank"> 
+                    <img class="iconSM" src="./Chicago Touch_files/instagram.svg" alt="instagram"> </a> 
+                    <a href="https://www.youtube.com/channel/UCW5TMSBZZ0VZ41EY-u5MYUg" class="link-dark text-decoration-none" target="_blank"> 
+                    <img class="iconSM" src="./Chicago Touch_files/youtube.svg" alt="youtube"> </a> 
+                    <a href="https://www.linkedin.com/company/chicago-touch/" class="link-dark text-decoration-none" target="_blank"> 
+                    <img class="iconSM" src="./Chicago Touch_files/linkedin.svg" alt="linkedin"> </a> 
                 </div>
-                <div class="col-6 text-end"> <a href="https://www.facebook.com/ChicagoTouch"
-                        class="link-dark text-decoration-none" target="_blank"> <i class="bi bi-facebook"></i> </a> <a
-                        href="https://twitter.com/chicagotouch" class="link-dark text-decoration-none" target="_blank">
-                        <i class="bi bi-twitter"></i> </a> <a href="https://www.instagram.com/chicagotouchwellness"
-                        class="link-dark text-decoration-none" target="_blank"> <i class="bi bi-instagram"></i> </a> <a
-                        href="https://www.youtube.com/channel/UCW5TMSBZZ0VZ41EY-u5MYUg"
-                        class="link-dark text-decoration-none" target="_blank"> <i class="bi bi-youtube"></i> </a> <a
-                        href="https://www.linkedin.com/company/chicago-touch/" class="link-dark text-decoration-none"
-                        target="_blank"> <i class="bi bi-linkedin"></i> </a> </div>
+                <div class="col-12 text-end"> <span itemprop="telephone"> <a class="text-dark text-decoration-none tlf-size"
+                    href="tel:312-929-3083"> <i class="bi bi-telephone-fill"></i> 312-929-3083 </a> </span>
+                </div>
+            </div>
+            </div>
             </div>
         </footer>
+
+<!--MODALES SERVICIOS-->
+        <div class="modal fade" id="serviceModal-1" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Swedish massage </h5> <button
+                            type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>It is also called European massage. It features the principles of continuous touch
+                            and transitional strokes, including:</p>
+                        <ul>
+                            <li>Gliding strokes - Aka Effleurage</li>
+                            <li>Compression and Kneading - Aka petrissage</li>
+                            <li>Rocking/Shaking - Relaxes joint tissue, supports range of motion</li>
+                            <li>Stretching - Best example: hip stretches to loosen the lower back</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="serviceModal-2" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Deep tissue </h5> <button type="button"
+                            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Deep tissue massage, or structural bodywork includes a variety of pressure levels
+                            including sustained contact with minimal pressure.</p>
+                        <p>Deep tissue massage has more emphasis on the pliability of the fascia which is the
+                            connective tissue that surrounds muscles and organs.</p>
+                        <p>If the touch modality is attempting to release fascia that has become too thick, then
+                            it’s considered deep tissue bodywork. At Chicago Touch, Marco has completed a
+                            150-hour program in Structural Integration.</p>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="serviceModal-3" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Sports massage </h5> <button
+                            type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Sports massage has multiple facets:</p>
+                        <ul>
+                            <li>Performance Enhancement - Less potential for a muscle to be injured when it has
+                                been de-stressed.</li>
+                            <li>Improved recovery time - Get any type of massage after your most intense
+                                training sessions. Faster recovery guaranteed.</li>
+                            <li>Rehabilitation - Sports medicine involves the use of touch modalities to speed
+                                up recovery time from any type of injury.ic nervous system associated with
+                                relaxation, recovery and healing.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="serviceModal-4" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Prenatal massage </h5> <button
+                            type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Pregnancy has symptoms and natural discomfort. All aspects of healthy lifestyle take
+                            on additional significance during pregnancy. Minimizing stress becomes a higher
+                            priority.</p>
+                        <p>We avoid prone massage after the first trimester and we only do side-lying massage
+                            during the third trimester.</p>
+                        <p>Props, pillows and bolsters are used to achieve the most comfortable position. Our
+                            top prenatal therapist is Ning who has a Master’s degree in Oriental Medicine.</p>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="serviceModal-5" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Manual lymphatic drainage </h5> <button
+                            type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lymphatic drainage can help speed up the shrinkage of scar tissue. It’s also used
+                            with cleansing and detoxification. Lymph drainage is highly recommended after any
+                            liposuction treatments as it will expedite recovery after the procedure.</p>
+                        <p>Reach us to learn more about our post liposuction services to expedite your recovery
+                            and combine it with our compression garments.</p>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="serviceModal-6" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Acupuncture </h5> <button type="button"
+                            class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Acupuncture is a form of alternative medicine and a key component of traditional
+                            Chinese medicine in which thin needles are inserted into the body.&nbsp;It could
+                            help with low&nbsp;back pain, neck pain, headache and migraine.</p>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="modal fade" id="serviceModal-7" data-bs-backdrop="true" data-bs-keyboard="true"
+            tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel"> Compression garments </h5> <button
+                            type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Compression is a key component of the liposuction recovery process. Compression
+                            garments offer many benefits in the recovery process from liposuction and&nbsp;body
+                            contouring procedures and can make a dramatic difference in the surgical outcome.
+                            Now, offering compression garment measurements for proper fitting. Also offering the
+                            option to buy direct your compression garment (faja) at Chicago Touch.</p>
+                    </div>
+                    <div class="modal-footer"> <a class="btn btn-dark" href="https://chicagotouch.booksy.com/"
+                            target="_blank"> Appointment → </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <script type="text/javascript" src="./Chicago Touch_files/main.js.descarga"> </script>
     </section>
 </body>
